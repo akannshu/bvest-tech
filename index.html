@@ -1,209 +1,295 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tech Events</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="index.css">
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Import Google Icon Font-->
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- BootStrap JS -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
+
+
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+
+
+  <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <title>Tech Events | BVEST</title>
 </head>
 
+<body style="background-color: black;">
+  <!--Header-->
 
-<body>
-  <!-- <div class="headbar">
-    <div class="sub-headbar">
-      <div class="logo headbar-item"><a href="#">BVEST</a></div>
-      <div class="links-div">
-        <a href="#" class="link">Home</a>
-        <a href="#" class="link">FAQ</a>
-        <a href="#" class="link">Contact</a>
-        <a href="#" class="link">Team</a>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar" style="background: black">
+    <a class="navbar-brand" href="index.html"><span id="BrandIcon"></span><span id="brand">BVEST</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div class="dropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#Home"><span class="links">Home</span><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#events"><span class="links">Events</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#venue-section"><span class="links">Venue</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="links" id="nav-resume-text">Team</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div> -->
-  <!-- <img src="http://gdj.graphicdesignjunction.com/wp-content/uploads/2017/12/best-logos-2017-25.jpg" alt="" class="logo"> -->
-    <ul class="nav justify-content-end my-nav" style="margin-right:2rem;">
-        <li class="nav-item active">
-            <a class="nav-link" href="#" style="color:white;">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" style="color:white;">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#"style="color:white">Events</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#" style="color:white;">FAQ</a>
-        </li>
-    </ul>
+  </nav>
 
-    <div class="card mb-3" style="background-color: black; width:100%;">
-      <div class="card-body" style="margin-top:-5%;">
-        <video src="../tech/images/codeback2.mp4" autoplay muted loop id="myVideo"></video>
-        <div class="text-block">
-          <p
-            style="font-size: 100px; font-weight: bold; padding-left:60px;line-height:1; text-shadow: 2px 2px rgb(141, 136, 136);">
-            Welcome</p>
-          <p
-            style="font-size: 100px;  font-weight: bold; margin-left: -25%; text-align:center;line-height:1;text-shadow: 2px 2px rgb(141, 136, 136);">
-            To </p>
-          <p
-            style=" font-size: 100px;  font-weight: bold; padding-left:100px;line-height:1;text-shadow: 2px 2px rgb(141, 136, 136);">
-            BVEST</p>
-            <p
-              style=" font-size: 80px;  margin-left: -10%; font-weight: bold;line-height:1;text-shadow: 2px 2px rgb(141, 136, 136);">
-              Technical Events</p>
-          <h4 style=" font-size:40px; padding-left:180px;text-shadow: 2px 2px rgb(141, 136, 136);"> 2019 </h4>
+
+  <section id=cover>
+
+    <h1>
+      BVEST
+    </h1>
+    <h2>
+      Technical Events
+    </h2>
+    <p>
+      Look Down for some amazing Technical Events!
+    </p>
+
+    <!-- <a href="#events"><i id="down-arrow" class="fas fa-robot fa-5x"></i></a> -->
+
+    <!-- <i class="fas fa-microchip"></i>
+    <i class="fas fa-wrench"></i>
+    <i class="fas fa-cogs"></i>     -->
+
+
+  </section>
+
+
+  <section id="events">
+
+    <video src="./images/codeback2.mp4" id="cover-video" autoplay muted loop></video>
+
+    <h1>
+      Technical Events
+    </h1>
+
+
+    <div class="events-row">
+
+      <div class="events-graphics-responsive">
+
+        <img class="events-graphics-responsive-image" src="https://cdn.lynda.com/course/373553/373553-636125469315480526-16x9.jpg" alt="Image">
+
+      </div>
+
+      <div class="events-graphics">
+
+        <img src="https://cdn.lynda.com/course/373553/373553-636125469315480526-16x9.jpg"
+          class="events-graphics-image bvpleague" height="400" width="400">
+
+      </div>
+
+      <div class="events-content">
+
+        <h3 class="events-content-heading">MUN TECH</h3>
+        <p class="events-content-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia quidem
+          dolorem quisquam asperiores
+          suscipit
+          in placeat! Est expedita natus in.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="events-row">
+
+      <div class="events-graphics-responsive">
+
+        <img class="events-graphics-responsive-image" src="https://steamuserimages-a.akamaihd.net/ugc/874126099173328767/CF6F510991DE143D4F3489ECDE748C9D5A3B0813/" alt="Image">
+
+      </div>
+
+
+      <div class="events-content">
+
+        <h3 class="events-content-heading">Hackerman</h3>
+        <p class="events-content-paragraph">An AR based escape room. We’ll have minigames or puzzles related to a
+          specific theme solving which will give us clues and we have to unlock the door using them.</p>
+
+      </div>
+
+      <div class="events-graphics">
+
+        <img
+          src="https://steamuserimages-a.akamaihd.net/ugc/874126099173328767/CF6F510991DE143D4F3489ECDE748C9D5A3B0813/"
+          class="events-graphics-image bvpleague" height="400" width="400">
+
+      </div>
+
+    </div>
+
+
+    <div class="events-row">
+
+
+      <div class="events-graphics-responsive">
+
+        <img class="events-graphics-responsive-image" src="./images/blind-coding.jpg" alt="Image">
+
+      </div>
+
+
+      <div class="events-graphics">
+
+        <img src="./images/blind-coding.jpg" class="events-graphics-image bvpleague" height="400" width="400">
+
+      </div>
+
+
+      <div class="events-content">
+
+        <h3 class="events-content-heading">Blind Coding</h3>
+        <p class="events-content-paragraph">Some quick example text to build on the card title and make up the bulk of
+          the card's content.</p>
+
+      </div>
+
+    </div>
+
+    <div class="events-row">
+
+
+      <div class="events-graphics-responsive">
+
+        <img class="events-graphics-responsive-image" src="./images/back2.jpg" alt="Image">
+
+      </div>
+
+
+
+      <div class="events-content">
+
+        <h3 class="events-content-heading">Competitive coding</h3>
+        <p class="events-content-paragraph">The aim of this game is simple - to pass a loop through a wired path without
+          touching the path.</p>
+
+      </div>
+
+
+      <div class="events-graphics">
+
+        <img src="./images/back2.jpg" class="events-graphics-image touchmenot" height="400" width="400">
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div id="venue-section" class="footer">
+    <h1>
+      Venue
+    </h1>
+    <div class="venue">
+
+      <iframe width="100%" height="100%" class="map" id="mapcanvas"
+        src="https://maps.google.com/maps?q=new%20delhi&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+        frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+        <div class="zxos8_gm"><a href="https://themesort.com/category/agency-themes">Agency templates at
+            themesort</a></div>
+        <div style="overflow: hidden;">
+          <div id="gmap_canvas" style="height: 100%; width: 100%;"></div>
+        </div>
+        <div><small>Powered by <a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small></div>
+      </iframe>
+
+      <div class="venue-info">
+        <!-- <image src="./tech/images/location.svg" class="loc-svg" /> -->
+        <i class="fas fa-map-marker-alt fa-6x"></i>
+        <div class="venue-info-head">
+          <h1>BVCOE</h1>
+          <p class="details" style="font-size: 1.4rem;">A-4 Block, Baba Ramdev Marg, Shiva Enclave, Paschim
+            Vihar, New Delhi, Delhi 110063</p>
         </div>
       </div>
+
     </div>
-<br> <br> <br>
-  <div style="margin-top:35%">
-  </div>
-  <br> <br>
 
-  <div class="container">
-      <div class="row my-row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
-              <div class="card" style="width: 25rem; ">
-                  <img class="card-img-top" src="data:image/jpeg;base64,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" alt="...">
-
-                </div>
-          </div>
-          <div class="col-lg-6 col-md-12 col-sm-12 text text-1">
-              <div class="card" style="width: 29.5rem; height: 16.5rem; background-color: black">
-                  <div class="card-body">
-                    <h2>Blind Coding</h2>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div>
-          </div>
-      </div>
-  </div>
-  <br> <br>
-<br> <br>
- <div class="container">
-    <div class="row my-row justify-content-around">
-        <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="card" style="width: 25rem; ">
-                <img src="https://steamuserimages-a.akamaihd.net/ugc/874126099173328767/CF6F510991DE143D4F3489ECDE748C9D5A3B0813/" class="card-img-top" alt="...">
-
-              </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 text text-3">
-            <div class="card" style="width: 29.5rem; height: 16.5rem; background-color: black">
-                <div class="card-body">
-                    <h2>Hackerman</h2>
-
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-         </div>
-          </div>
-  <br> <br>
-        </div>
-        <div class="container">
-            <div class="row my-row">
-                <div class="col-lg-6 col-md-12 col-sm-12 text text-4">
-                    <div class="card" style="width: 29.5rem; height: 16.5rem; background-color: black">
-                        <div class="card-body">
-                            <h2>Competitive coding</h2>
-
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="card" style="width: 25rem; margin-left:18%; ">
-                        <img src="../tech/images/back2.jpg" class="card-img-top" alt="...">
-
-                      </div>          </div>
-            </div>
-        </div>
-        <br> <br>
-        <div class="container">
-            <div class="row my-row justify-content-around">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="card" style="width: 25rem; ">
-                        <img src="https://cdn.lynda.com/course/373553/373553-636125469315480526-16x9.jpg" class="card-img-top" alt="...">
-
-                      </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 text text-5">
-                    <div class="card" style="width: 29.5rem; height: 16.5rem; background-color: black">
-                        <div class="card-body">
-                            <h2>MUN TECH</h2>
-
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                      </div>
-                 </div>
-                  </div>
-
-                </div>
-    </div>
- </div>
-<br> <br> <br>
-
-
-
-
-
-
-<div class="footer">
-
-<br>
-<p style="font-size: 4.5rem;">Venue</p>
-              <div class="venue">
-                <iframe width="100%"  height="100%" class="map" id="mapcanvas" src="https://maps.google.com/maps?q=new%20delhi&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><div class="zxos8_gm"><a href="https://themesort.com/category/agency-themes">Agency templates at themesort</a></div><div style="overflow: hidden;"><div id="gmap_canvas" style="height: 100%; width: 100%;"></div></div><div><small>Powered by <a href="https://www.embedgooglemap.co.uk">Embed Google Map</a></small></div></iframe>
-                <div class="venue-info">
-                  <image src="../tech/images/location.svg" class="loc-svg"/>
-                  <div class="venue-info-head">
-                    <p style="margin-bottom: 3rem; font-size: 3rem; margin-right: 75%;">BVCOE</p>
-                    <p class="details" style="font-size: 1.4rem;">A-4 Block, Baba Ramdev Marg, Shiva Enclave, Paschim Vihar, New Delhi, Delhi 110063</p>
-                  </div>
-                </div>
-            </div>
     <div className="con">
-       <h1>
-           BVEST
-       </h1>
-        <a href="">
+      <h1>
+        BVEST
+      </h1>
+      <a href="">
 
-            <div className="email">
-                bvest@gmail.com
-            </div>
+        <div className="email">
+          bvest@gmail.com
+        </div>
 
-            </a>
+      </a>
 
-            <div class="icons">
-                <i class="fa fa-facebook-square icon" style="font-size:36px; color:rgb(26, 98, 156)"></i>
-                <i class="fa fa-instagram icon" style="font-size:36px; color:rgb(189, 61, 82)"></i>
-                <i class="fa fa-github icon" style="font-size:36px"></i>
+      <div class="icons">
 
-            <a href="tel: 8076989248">
-                <i class="fa fa-phone" style="font-size:36px; color:green"></i>
-              </a>
+        <i class="fa-icon fab fa-facebook-square fa-3x" style="color: #3b5998;"></i>
+        <i class="fa-icon fab fa-twitter-square fa-3x" style="color: #00acee;"></i>
+        <i class="fa-icon fab fa-github-square fa-3x" style="color: gray;"></i>
 
-            </div>
+        <a href="tel: 8076989248">
+          <i class="fa-icon fa fa-phone" style="font-size:36px; color:green"></i>
+        </a>
 
-            <div className="details">
-                <i class="fa fa-copyright" style="font-size:15px"></i>
-                Hack@Bvest , Bharati Vidyapeeth College of Engineering
+      </div>
 
-            </div>
+      <div className="details">
+        <i class="fa fa-copyright" style="font-size:15px"></i>
+        Hack@Bvest , Bharati Vidyapeeth College of Engineering
+
+      </div>
 
 
     </div>
-<br> <br>
 
 
 
+    <!-- Materialize JS -->
 
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
